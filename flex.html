@@ -6,10 +6,35 @@
     <title>Flexbox Layout</title>
     <style>
         .container{
-
+            display: flex;
+            gap: 5px;
         }
         .box{
             background-color: lightblue;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .container2{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 5px;
+
+        }
+        .item{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -27,6 +52,20 @@
             <h3>Third Box</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum quibusdam doloribus, ipsam, eaque itaque numquam, aspernatur iure ex quidem commodi dignissimos. Alias ipsam saepe vitae dolorum aliquid tempore sunt.</p>
         </div>
+    </div>
+
+    <!-- .container2>.item*10{Item - $} -->
+    <div class="container2">
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
     </div>
 </body>
 </html>
